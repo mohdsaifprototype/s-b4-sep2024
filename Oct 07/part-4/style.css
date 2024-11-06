@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  transition: all 5s ease;
+}
+
+body {
+  margin: 0;
+}
+
+#box{
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+}
