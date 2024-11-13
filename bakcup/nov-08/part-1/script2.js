@@ -14,5 +14,5 @@ let result;
 // result = confirm("Do you wish to confirm");
 // console.log("Result after confirm: ", result);
 
-result = prompt("Enter your name", "anonymous");
-console.log("Result after prompt: ", result);
+// result = prompt("Enter your name", "anonymous");
+// console.log("Result after prompt: ", result);
