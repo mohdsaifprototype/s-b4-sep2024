@@ -9,28 +9,38 @@ If the guess is correct print you won.
 Hint: USE BUILT-IN METHODS FROM MATH CLASS FROM JS
 */
 
-// const MIN = 1;
-// const MAX = 100;
-// const randomNumber = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
-// let attempts = 0;
-// let guess = undefined;
 
-// console.log(randomNumber);
+const MIN = 1;
+const MAX = 100;
+const randomNumber = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
+let attempts = 0;
+let guessSelection = document.querySelector("#guess");
 
-// do {
-//   guess = Number(prompt("Guess the no. between " + MIN + " and " + MAX));
-//   attempts++;
-//   if (guess > randomNumber) {
-//     alert("Guess a smaller no.");
-//   } else if (guess < randomNumber) {
-//     alert("Guess a larger no.");
-//   }
-// } while (guess !== randomNumber);
+let button1 = document.querySelector("#button1");
+let button2 = document.querySelector("#button2");
 
-// alert("You won in " + attempts + " attempts!");
+let message1 = document.querySelector("#message1");
+let message2 = document.querySelector("#message2");
 
-// console.log(randomNumber);
+console.log(randomNumber);
 
-/* 
-Use the above code and redefine it to be used for graphical concept
-*/
+function check() {
+  attempts++;
+  let guess = guessSelection.value;
+  console.log(guess);
+  if (guess > randomNumber) {
+    message1.style.display = "block";
+    message1.innerHTML = "Guess a smaller no.!";
+  }
+  else if (guess < randomNumber) {
+    message1.style.display = "block";
+    message1.innerHTML = "Guess a larger no.!";
+  }
+  else {
+    message1.style.display = "none";
+    message2.style.display = "block";
+    message2.innerHTML = "You won in " + attempts + " attempts!";
+    guessSelection.setAttribute("disabled", true);
+  }
+}
+

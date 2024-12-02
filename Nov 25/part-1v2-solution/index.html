@@ -24,26 +24,28 @@
       <h1 class="text-center py-2 my-0">Guess the number game!</h1>
     </header>
     <main>
-      <!-- <div class="container text-center">
-        <h2 class="my-4">Ready to play the game?</h2>
-        <button type="button" class="btn btn-primary">Start Game</button>
-      </div> -->
+
 
       <div class=" mx-auto" style="width: fit-content">
-        <form action="#" class="my-4 p-4">
+        <form action="#" class="my-4 p-4 text-center">
           <input
             type="number"
             name="guess"
             id="guess"
             placeholder="Guess a number between 1 and 100?"
-            style="width: 300px"
+            style="width: 320px"
+            class="py-2 px-3 text-center"
+            min="1"
+            max="100"
           />
           <br>
-          <button class="btn btn-primary" type="submit">Check</button>
+          <button id="button1" class="btn btn-primary mt-4" type="button" onclick="check()">Check</button>
+          <button id="button2" class="btn btn-secondary mt-4" type="button" onclick="playAgain()">Play Again!</button>
         </form>
 
         <div class="message text-center">
-          <div class="text-danger bg-light ">message</div>
+          <div class="text-light bg-danger h4 p-2 rounded" id="message1">message</div>
+          <div class="text-light bg-success h4 p-2 rounded" id="message2">message</div>
         </div>
       </div>
     </main>

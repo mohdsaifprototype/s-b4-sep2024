@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sub-containers">Sub container4
+      <div id="box">This is a box</div>
+    </div>
+    <div class="sub-containers">Sub container1</div>
+    <div class="sub-containers">Sub container2</div>
+    <div class="sub-containers">Sub container3</div>
+    <div class="sub-containers">Sub container5</div>
+  </div>
+  <script>
+    // let box = document.getElementById("box");
+    // box.style.backgroundColor = "red";
+    let subContainers = document.querySelectorAll(".sub-containers");
+    console.log(subContainers);
+    /* Method 1 */
+    // subContainers[0].style.backgroundColor = "cyan";
+    // subContainers[1].style.backgroundColor = "cyan";
+    // subContainers[2].style.backgroundColor = "cyan";
+    // subContainers[3].style.backgroundColor = "cyan";
+    // subContainers[4].style.backgroundColor = "cyan";
+
+    /* Method 2 */
+    /* for (let i = 0; i < subContainers.length; i++) {
+      subContainers[i].style.backgroundColor = "cyan";
+    } */
+
+    /* Method 3 */
+    subContainers.forEach((element) => {
+      element.style.backgroundColor = "cyan";
+    });
+  </script>
+</body>
+</html>

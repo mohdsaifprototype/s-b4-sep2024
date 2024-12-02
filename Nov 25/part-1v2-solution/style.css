@@ -6,3 +6,16 @@ body{
   min-height: 100vh;
 }
 
+#message1 {
+  display: none;
+}
+
+#message2 {
+  display: none;
+}
+
+
+#button2{
+  display: none;
+}
+
