@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" onclick="clicked()" target="_blank">Visit Google</a>
+    </div>
+    <script>
+      let myElem = document.querySelector("a");
+      let counter = 0;
+      console.log("My form structure", myElem);
+
+      function clicked() {
+        counter++;
+        switch (counter) {
+          case 1:
+            myElem.setAttribute("href", "https://www.google.com");
+            break;
+          case 2:
+            myElem.setAttribute("href", "https://www.facebook.com");
+            break;
+          default:
+            myElem.setAttribute("href", "https://www.pmsprototype.com");
+            myElem.setAttribute("target", "_self");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

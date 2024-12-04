@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+body{
+  min-height: 100vh;
+  margin: 0;
+  background-color: salmon;
+}
+
+.container{
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.container form{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+input, button{
+  font-family: inherit;
+  font-size: inherit;
+  padding: 12px;
+}
+
+::placeholder{
+  text-transform: uppercase;
+}

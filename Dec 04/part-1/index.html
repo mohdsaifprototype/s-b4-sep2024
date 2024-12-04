@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          placeholder="johndoe@example.com"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password..."
+        />
+        <button type="button" onclick="clicked()">Login</button>
+      </form>
+    </div>
+    <script>
+      let myform = document.querySelector("form");
+
+      console.log("My form structure", myform);
+
+      function clicked() {
+        console.log(myform.children[0].value);
+        console.log(myform.children[1].value);
+      }
+    </script>
+  </body>
+</html>
