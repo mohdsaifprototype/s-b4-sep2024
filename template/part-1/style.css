@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+body{
+  min-height: 100vh;
+  margin: 0;
+  background-color: salmon;
+}
+
