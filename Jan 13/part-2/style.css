@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+body{
+  margin: 0;
+  background-color: salmon;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stop-watch{
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.time{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
