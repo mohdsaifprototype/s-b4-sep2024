@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  outline: 2px solid purple;
+  padding: 8px;
+  margin: 8px;
+}
+
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color: salmon;
+}
+
+.box{
+  position: absolute;
+  padding: 24px 32px;
+  border: 2px solid black;
+  background-color: white;
+  margin: 20px;
+}
+
